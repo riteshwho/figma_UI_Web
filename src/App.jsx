@@ -9,7 +9,7 @@ function App() {
       <nav className="navbar bg-body-tertiary">
         <div className="container-fluid">
           <a className="navbar-brand">
-            <img className="atg" src="./public/images/logo.png" />
+            <img className="atg" src="../public/images/logo.png" />
           </a>
           <form className="d-flex search" role="search">
             <input
@@ -88,7 +88,7 @@ function App() {
       <span className="location">
         <img
           style={{ marginBottom: "4px" }}
-          src="./public/images/geo-alt-fill.svg"
+          src="../public/images/geo-alt-fill.svg"
         />{" "}
         Noida,India
       </span>
