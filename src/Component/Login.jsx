@@ -2,6 +2,9 @@ import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import "./Login.css";
+import login from '../Images/login.png';
+import google from '../Images/google.svg';
+import fb from '../Images/facebook.svg';
 
 function Login() {
   const [show, setShow] = useState(false);
@@ -35,15 +38,15 @@ function Login() {
           <div>
             <button className="sign">Sign In</button>
             <div className="svg">
-              <img className="fb" src="../public/images/facebook.svg" />
+              <img className="fb" src={fb} />
               <a href="https://www.facebook.com/"> Sign in</a>
               <br />
-              <img className="google" src="../public/images/google.svg" />
+              <img className="google" src={google} />
               <a href="https://myaccount.google.com/"> Sign in</a>
             </div>
           </div>
           <div>
-            <img className="logo" src="../public/images/login.png" />
+            <img className="logo" src={login} />
           </div>
         </div>
       </Modal>

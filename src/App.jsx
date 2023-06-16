@@ -2,6 +2,14 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Feed from "./Component/Feed";
 import Login from "./Component/Login";
+import logo from './Images/logo.png';
+import exclamation from './Images/exclamation-circle.svg';
+import share from './Images/share-fill.svg';
+import pencil from './Images/pencil-fill.svg';
+import hands from './Images/hand-thumbs-up-fill.svg';
+import location from './Images/geo-alt-fill.svg';
+import person from './Images/person-plus.svg';
+
 
 function App() {
   return (
@@ -9,7 +17,7 @@ function App() {
       <nav className="navbar bg-body-tertiary">
         <div className="container-fluid">
           <a className="navbar-brand">
-            <img className="atg" src="../public/images/logo.png" />
+            <img className="atg" src={logo} />
           </a>
           <form className="d-flex search" role="search">
             <input
@@ -81,27 +89,27 @@ function App() {
             marginRight: "2px",
             marginBottom: "2px",
           }}
-          src="../public/images/person-plus.svg"
+          src={person}
         />{" "}
         Join Group
       </button>
       <span className="location">
         <img
           style={{ marginBottom: "4px" }}
-          src="../public/images/geo-alt-fill.svg"
+          src={location}
         />{" "}
         Noida,India
       </span>
-      <img className="pencil" src="../public/images/pencil-fill.svg" />
+      <img className="pencil" src={pencil}/>
       <p className="exclam">
-        <img src="../public/images/exclamation-circle.svg" />
+        <img src={exclamation} />
         Your location will help us serve better and extend a personalised
         experience.
       </p>
       <span className="friends">
         <img
           style={{ marginBottom: "4px" }}
-          src="../public/images/hand-thumbs-up-fill.svg"
+          src={hands}
         />{" "}
         REcommended Groups
       </span>
@@ -134,7 +142,7 @@ function App() {
         }
         name={"Sarthak Kamra"}
         views={"1.4k views"}
-        svg={"../public/images/share-fill.svg"}
+        svg={share}
       />
       <br />
       <Feed
@@ -153,7 +161,7 @@ function App() {
         }
         name={"Sarah West"}
         views={"1.4k views"}
-        svg={"../public/images/share-fill.svg"}
+        svg={share}
       />
       <br />
       <Feed
@@ -172,7 +180,7 @@ function App() {
         }
         name={"will Johnson"}
         views={"2.8k views"}
-        svg={"../public/images/share-fill.svg"}
+        svg={share}
       />
     </>
   );

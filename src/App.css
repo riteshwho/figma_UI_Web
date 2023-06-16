@@ -277,6 +277,10 @@
     width: 392px;
   }
 
+  button.btn.btn-primary {
+    margin-left: 20px;
+  }
+
   .header {
     width: 392px;
   }
