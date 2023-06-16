@@ -88,7 +88,7 @@ function App() {
       <span className="location">
         <img
           style={{ marginBottom: "4px" }}
-          src="../public/images/geo-alt-fill.svg"
+          src="./public/images/geo-alt-fill.svg"
         />{" "}
         Noida,India
       </span>
